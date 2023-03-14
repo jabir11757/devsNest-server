@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 
 //user schema
-
 const userSchema = new mongoose.Schema({
+
     name: String,
     email: {
         type: String,
@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     age: {
         type: Number,
         required: true
-    },
+    }
 })
 
 //user model
