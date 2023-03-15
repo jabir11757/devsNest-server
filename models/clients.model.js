@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
 
-const companySchema = new mongoose.Schema({
-    name: String,
-    catchPhrase: String,
-    bs: String
-})
 //client schema
 const clientSchema = new mongoose.Schema({
 

@@ -17,9 +17,11 @@ mongoose.connect(uri, {
 
 
 const user = require('./routers/users.router');
+const client = require('./routers/clients.router');
 
 //set route
-app.use('/user', user)
+app.use('/user', user);
+app.use('/client', client)
 
 app.get("/", (req, res) => {
     res.send("hello");
